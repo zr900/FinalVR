@@ -1,0 +1,5 @@
+C:/Users/zahra/OneDrive/Documents/GitHub/FinalVR/.utmp/RelWithDebInfo/e156b2x5/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/zahra/OneDrive/Documents/GitHub/FinalVR/.utmp/RelWithDebInfo/e156b2x5/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/zahra/OneDrive/Documents/GitHub/FinalVR/.utmp/RelWithDebInfo/e156b2x5/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/zahra/OneDrive/Documents/GitHub/FinalVR/.utmp/RelWithDebInfo/e156b2x5/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/zahra/OneDrive/Documents/GitHub/FinalVR/.utmp/RelWithDebInfo/e156b2x5/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
