@@ -2,22 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class RoomSwitch : MonoBehaviour
 {
-    public GameObject ChildRoom;
-    public GameObject TeenRoom;
-    public ScreenFader fader;
-
-    private bool isInChildhood = true;
-
-    public void SwitchRooms()
+    public GameObject childRoom;    // Reference to the ChildRoom
+    public GameObject teenRoom;     // Reference to the TeenRoom
+    public XRGrabInteractable grabInteractable;  // 3DS object (Child3DS or Teen3DS)
+    
+    private void Start()
     {
-        StartCoroutine(fader.FadeRoutine(() =>
+        // Set the initial room to be active
+        childRoom.SetActive(true);
+        teenRoom.SetActive(false);
+    }
+
+    // Method to switch rooms
+    public void SwitchRoom()
+    {
+        // Toggle the active rooms
+        if (childRoom.activeSelf)
         {
-            isInChildhood = !isInChildhood;
-            ChildRoom.SetActive(isInChildhood);
-            TeenRoom.SetActive(!isInChildhood);
-        }));
+            childRoom.SetActive(false);
+            teenRoom.SetActive(true);
+        }
+        else
+        {
+            childRoom.SetActive(true);
+            teenRoom.SetActive(false);
+        }
+    }
+
+    // Call this method when the 3DS is grabbed
+    public void OnGrabbed()
+    {
+        SwitchRoom();
     }
 }
+
+
