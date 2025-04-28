@@ -20,6 +20,10 @@ public class RoomSwitch : MonoBehaviour
     // Method to switch rooms
     public void SwitchRoom()
     {
+
+        Debug.Log("switcher");
+        Debug.Log(childRoom.activeSelf);
+
         // Toggle the active rooms
         if (childRoom.activeSelf)
         {
