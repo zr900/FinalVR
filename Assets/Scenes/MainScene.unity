@@ -1312,6 +1312,7 @@ MonoBehaviour:
   childRoom: {fileID: 528379978}
   teenRoom: {fileID: 1070731922}
   grabInteractable: {fileID: 293094157}
+  screenFader: {fileID: 1997603172}
 --- !u!1 &299639867
 GameObject:
   m_ObjectHideFlags: 0
@@ -7717,7 +7718,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -7737,7 +7738,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7758,6 +7759,7 @@ MonoBehaviour:
   childRoom: {fileID: 528379978}
   teenRoom: {fileID: 1070731922}
   grabInteractable: {fileID: 730417663}
+  screenFader: {fileID: 0}
 --- !u!114 &730417667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8348,7 +8350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2b6e44a8b181448aaa183d67f75a8f56, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -8829,7 +8831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1070731923
 Transform:
   m_ObjectHideFlags: 0
@@ -10369,7 +10371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: I'm building a VR project for an assignment.
   messageText: {fileID: 1409923325}
-  displayTime: 3
+  displayTime: 5
 --- !u!65 &1539282344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10385,7 +10387,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10583,7 +10585,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalScale.x
-      value: 249.27536
+      value: 209.02487
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalScale.y
@@ -10591,19 +10593,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalScale.z
-      value: 249.27534
+      value: 190.95737
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3539753
+      value: -1.355
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04382515
+      value: -0.033
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.9054842
+      value: -1.797
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8646feb90cbfe664f849eba6f35a3114, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11483,8 +11485,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.3502016, y: 0.46923652, z: 0.4570737}
+  m_Center: {x: 0.0040894663, y: -0.2653822, z: 0.5074726}
 --- !u!4 &2112136638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f8683037aa74573408f13491d6594003, type: 3}

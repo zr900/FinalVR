@@ -9,6 +9,7 @@ public class RoomSwitch : MonoBehaviour
     public GameObject childRoom;    // Reference to the ChildRoom
     public GameObject teenRoom;     // Reference to the TeenRoom
     public XRGrabInteractable grabInteractable;  // 3DS object (Child3DS or Teen3DS)
+    public ScreenFader screenFader;
     
     private void Start()
     {
